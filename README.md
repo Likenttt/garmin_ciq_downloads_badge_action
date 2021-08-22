@@ -1,8 +1,4 @@
-# garmin_ciq_downloads_badge_action
-This action is use to display a badge showing the app downloads in connect iq store
-
-
-
+# Garmin Connect IQ Store Downloads Action
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -18,6 +14,8 @@ This action is use to display a badge showing the app downloads in connect iq st
   <a href="https://github.com/Likenttt/garmin_ciq_downloads_badge_action">
     <img src="https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg" alt="Logo" width="80" height="80">
   </a>
+</p>
+
 
   <h3 align="center">Garmin Connect IQ Store Downloads Action</h3>
 
@@ -44,7 +42,7 @@ This action is use to display a badge showing the app downloads in connect iq st
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-action">About The Action</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -82,9 +80,14 @@ This action is use to display a badge showing the app downloads in connect iq st
 <!-- ABOUT THE PROJECT -->
 ## About The Action
 
-![Preview 1](images/preview1.png)
-
-![Preview 1](images/preview2.png)
+<p align="center">
+  <a href="https://github.com/Likenttt/Likenttt">
+    <img src="images/preview1.png" alt="preview1">
+  </a>
+  <a href="https://github.com/Likenttt/DogecoinToTheMoon">
+    <img src="images/preview2.png" alt="preview2">
+  </a>
+</p>
 
 Sometimes I want to show the downloads of my Connect IQ application in its repo on Github. However there isn't any solution existed. 
 
