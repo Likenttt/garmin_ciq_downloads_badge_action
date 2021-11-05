@@ -222,7 +222,7 @@ On Github, in this way we can configure this action running on every push.
 ```yml
 # in yml
 on:
-	push:
+  push:
     branches: [ main ]
 ```
 

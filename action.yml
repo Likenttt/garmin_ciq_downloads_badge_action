@@ -1,0 +1,26 @@
+# tutorial https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+name: 'Garmin Connect IQ Store Download Badge'
+description: 'Greet someone'
+inputs:
+  ciq_link_id:
+    description: 'A uuid from a typical url of garmin connect iq store, eg. dc6ceca8-6ec6-49f2-b711-4ebc0d347177 of https://apps.garmin.cn/zh-CN/apps/dc6ceca8-6ec6-49f2-b711-4ebc0d347177'
+    required: true
+    default: ''
+  doc_to_replace:
+    description: 'A uuid from a typical url of garmin connect iq store, eg. dc6ceca8-6ec6-49f2-b711-4ebc0d347177 of https://apps.garmin.cn/zh-CN/apps/dc6ceca8-6ec6-49f2-b711-4ebc0d347177'
+    required: true
+    default: ''
+outputs:
+  random-number:
+    description: "Random number"
+    value: ${{ steps.random-number-generator.outputs.random-id }}
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: bash
+    - id: random-number-generator
+      run: echo "::set-output name=random-id::$(echo $RANDOM)"
+      shell: bash
+    - run: ${{ github.action_path }}/goodbye.sh
+      shell: bash
